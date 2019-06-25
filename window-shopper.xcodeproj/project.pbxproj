@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		755B0B6C22C2BDA20032D803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B0B6B22C2BDA20032D803 /* AppDelegate.swift */; };
-		755B0B6E22C2BDA20032D803 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B0B6D22C2BDA20032D803 /* ViewController.swift */; };
+		755B0B6E22C2BDA20032D803 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B0B6D22C2BDA20032D803 /* MainViewController.swift */; };
 		755B0B7122C2BDA20032D803 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755B0B6F22C2BDA20032D803 /* Main.storyboard */; };
 		755B0B7322C2BDA30032D803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 755B0B7222C2BDA30032D803 /* Assets.xcassets */; };
 		755B0B7622C2BDA30032D803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 755B0B7422C2BDA30032D803 /* LaunchScreen.storyboard */; };
+		755B0B8022C2BFC60032D803 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B0B7F22C2BFC60032D803 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		755B0B6822C2BDA20032D803 /* window-shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "window-shopper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		755B0B6B22C2BDA20032D803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		755B0B6D22C2BDA20032D803 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		755B0B6D22C2BDA20032D803 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		755B0B7022C2BDA20032D803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		755B0B7222C2BDA30032D803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		755B0B7522C2BDA30032D803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		755B0B7722C2BDA30032D803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		755B0B7F22C2BFC60032D803 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		755B0B6A22C2BDA20032D803 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				755B0B7E22C2BF930032D803 /* Views */,
+				755B0B7D22C2BDE80032D803 /* Controller */,
 				755B0B6B22C2BDA20032D803 /* AppDelegate.swift */,
-				755B0B6D22C2BDA20032D803 /* ViewController.swift */,
 				755B0B6F22C2BDA20032D803 /* Main.storyboard */,
 				755B0B7222C2BDA30032D803 /* Assets.xcassets */,
 				755B0B7422C2BDA30032D803 /* LaunchScreen.storyboard */,
 				755B0B7722C2BDA30032D803 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		755B0B7D22C2BDE80032D803 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				755B0B6D22C2BDA20032D803 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		755B0B7E22C2BF930032D803 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				755B0B7F22C2BFC60032D803 /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				755B0B6E22C2BDA20032D803 /* ViewController.swift in Sources */,
+				755B0B8022C2BFC60032D803 /* CurrencyTextField.swift in Sources */,
+				755B0B6E22C2BDA20032D803 /* MainViewController.swift in Sources */,
 				755B0B6C22C2BDA20032D803 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ZKU4EP4Z;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +321,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49ZKU4EP4Z;
 				INFOPLIST_FILE = "window-shopper/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
